@@ -6,7 +6,7 @@ Once a client connection has been established the socket serves files that meet
     answered with an HTTP/1.0 response since most web browsers are not easily
     configured. 
 
-This builds off of another project, see `echo-server/`
+This builds off of another project of mine, see `echo-server/`
 
 ### Building
 To build, execute the command `make` in the project directory
