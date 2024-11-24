@@ -17,9 +17,9 @@ LDFLAGS = -g
 #
 # You should be able to add object files here without changing anything else
 #
-TARGET = web_server
-OBJ_FILES = ${TARGET}.o Argparser.o Stringlib.o
-INC_FILES = ${TARGET}.h Argparser.h Stringlib.h
+TARGET = echo_s
+OBJ_FILES = ${TARGET}.o Argparser.o
+INC_FILES = ${TARGET}.h Argparser.h
 
 
 ${TARGET}: ${OBJ_FILES}
@@ -45,7 +45,6 @@ submit:
 		rm -f core project1 ${OBJ_FILES}; \
 		mkdir ${USERNAME}; \
 		cp Makefile README.md *.h *.cpp ${USERNAME}; \
-		cp -r http ${USERNAME}; \
 		tar zcf ${USERNAME}.tgz ${USERNAME}; \
 		echo "Don't forget to upload ${USERNAME}.tgz to Canvas."; \
 	fi
