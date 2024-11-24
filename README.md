@@ -18,3 +18,5 @@ To run, execute the command `./web_server` in the project directory
         - This flag has a mandatory argument, which can be an integer value in the range of 0-6
         - Higher argument value = increased verbosity
         - Example of running with the flag: `./web_server -d 5`
+
+There are nicer html responsses in `http/` but are not required.
